@@ -1,0 +1,138 @@
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    
+}
+
+
+header {
+    background-color: white;
+    height: 75px;
+
+}
+
+header h1{
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:black; 
+    padding: 20px;
+
+}
+
+
+body { 
+    background-color: #0f0f0f;
+    padding: 0;
+
+}
+
+h1 {
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:white; 
+}
+
+
+details {
+  border: none;
+  background-image: linear-gradient(to right, navy, red, pink);
+  border-radius: 4px;
+  padding: 1em 1em 1em;
+  font-family: roc-grotesk-wide, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: white 
+
+}
+
+
+.form-row > input {
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: roc-grotesk-wide, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+
+}
+
+input[type=text], select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number], select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 20%;
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(198, 21, 21);
+  color: white
+}
+
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 1em 1em 1em;
+}
+
+details[open] {
+  padding: 1em 1em 1em;
+} 
+
+details form {
+  background-color: #0f0f0f;
+  padding: 2em 2em 2em;
+}
+
+.yourList{
+  margin:20px; 
+}
+
+
+.yourFavourites > h1 {
+text-align: center;
+  }
+
+.yourFavourites > ul {
+  text-align:center;
+  color:white;
+  font-family: roc-grotesk-wide, sans-serif;
+  font-weight: 600;
+  font-style: extrawide;
+  font-size: 25px;
+  font-size: 2vw;
+
+}
