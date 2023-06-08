@@ -1,4 +1,5 @@
 
+/* Basic styling for body and text */
 html {
     height: 100%;
     width: 100%;
@@ -36,11 +37,12 @@ h1 {
     color:white; 
 }
 
-
+/* Collapsable Tab */
+/* Borderless, full window width tab. Styled with a navy to pink gradient to provide contrast against the black/white theme of the app */
 details {
   border: none;
   background-image: linear-gradient(to right, navy, red, pink);
-  border-radius: 4px;
+  border-radius: 0px;
   padding: 1em 1em 1em;
   font-family: roc-grotesk-wide, sans-serif;
   font-weight: 600;
@@ -49,7 +51,7 @@ details {
 
 }
 
-
+/* start of CSS for collapsable form */
 .form-row > input {
   border: none;
   color: black;
@@ -64,9 +66,10 @@ details {
 
 }
 
+/* Styling for the input parameters */
 input[type=text], select {
   width: 70%;
-  padding: 12px 20px;
+  padding: 7px 10px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -76,7 +79,7 @@ input[type=text], select {
 
 input[type=number], select {
   width: 20%;
-  padding: 12px 20px;
+  padding: 7px 10px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -89,13 +92,14 @@ input[type=submit] {
   width: 20%;
   background-color: white;
   color: black;
-  padding: 14px 20px;
+  padding: 10px 10px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
+/* Hover for form submit button, using a striking and contrasting color to get user attention for it's functionality */
 input[type=submit]:hover {
   background-color: rgb(198, 21, 21);
   color: white
@@ -108,6 +112,7 @@ summary {
   padding: 1em 1em 1em;
 }
 
+/* The collapsable when open */
 details[open] {
   padding: 1em 1em 1em;
 } 
@@ -117,22 +122,76 @@ details form {
   padding: 2em 2em 2em;
 }
 
-.yourList{
-  margin:20px; 
+/* end of CSS for collapsable form */
+
+
+/* start of CSS for favourites lists */
+/* using a card container to make cards adjust dynamically to different screen sizes */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.card {
+  display: inline-block;
+  width: 300px; 
+  margin: 10px;
+  outline-style:solid;
+  outline-color: white;
+  background-color:#0f0f0f;
+  color: white; 
+  border-radius: 4px;
+  padding: 2em 2em 2em;
+  font-family: roc-grotesk-wide, sans-serif;
+  font-weight: 600;
+  font-style: extrawide;
+  font-size: 10px;
+  font-size: 1.5vw;
+}
+
+/* Inverting the color when hovered to create more contrast and readability for users when going through their list */
+
+.container > h2 {
+  text-align:center;
+}
+
+.container {
+  text-align:left;
+}
+
+.card:hover {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  color: black
+}
 
 .yourFavourites > h1 {
 text-align: center;
   }
 
-.yourFavourites > ul {
-  text-align:center;
-  color:white;
+
+
+.delete-button {
+  background-color: #0f0f0f; 
+  outline-style:solid;
+  outline-color:white;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-family: roc-grotesk-wide, sans-serif;
   font-weight: 600;
   font-style: extrawide;
-  font-size: 25px;
-  font-size: 2vw;
-
+  font-size: 10px;
+  font-size: 1.5vw;
 }
+
+/* Styling delete button to have the same red contrast as the form submit */
+.delete-button:hover {
+  background-color: red; 
+  outline-style:solid;
+  outline-color:black;
+  color: white;
+}
+

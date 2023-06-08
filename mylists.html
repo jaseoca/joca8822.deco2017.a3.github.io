@@ -7,28 +7,27 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
+<!--More general info found in README-->
 
 <body>
 
   <header>
     <section class="container ">
-  
-      <h1>Show All: My Lists</h1>
-      
+        <h1>Show All: My Lists</h1>  
       </section>
   </header>
 
+<!--Creating a collapsable tab which contains the input form-->
 <details>
+  <!--Form is given the ID "songform", this is used within the script-->
     <summary>Click to add new listing</summary>
-     <form id="songform">
-    
-    
-      <label for="artistname">artist:</label><br>
-      <input type="text" id="artistName" name="artistName" required="true"><br>
-      <label for="songtitle">song:</label><br>
-      <input type="text" id="songTitle" name="songTitle" required="true"><br>
-      <label for="albumname">album:</label><br>
-      <input type="text" id="albumName" name="albumName" required="true"><br>
+    <form id="songform">
+      <label for="artistName">artist:</label><br>
+      <input type="text" id="artistName" name="artist" required="true"><br>
+      <label for="songTitle">song:</label><br>
+      <input type="text" id="songTitle" name="song" required="true"><br>
+      <label for="albumName">album:</label><br>
+      <input type="text" id="albumName" name="album" required="true"><br>
       <br>
       <label for="comments">comments:</label><br>
       <input type="text" id="comments" name="comments"><br>
@@ -36,28 +35,37 @@
       <label for="quantity"> Rating (between 1 and 5):</label><br>
       <input type="number" id="quantity" name="quantity" min="1" max="5">
       </div>
-
+    
       <br>
       <br>
       <br>
-
+    
       <div class="form-row">
         <input type="submit"/>
       </div>
     </form>
+
+    
 </details>
 
-
-
-
+<!--After the user inputs their information and submits, 
+  all of the information should appear under the "your favourites" tab-->
 <br>
+
+
 <section class="yourFavourites">
     <h1>Your Favourites</h1><br>
-    <ul id="songlist"></ul>
+    <div id="songlist" class="card-container">
+      <!-- Cards will be dynamically added here -->
+      <!-- Was originally set out as a ul but wasn't quite as dynamic as i wanted it to be. Wrapping the cards under a card container 
+      enables flexbox and more seamless transition from desktop to mobile formats. -->
+    </div>
+    
 
-</section>
-<script src="script.js"> </script>
-</body>
+
+      </section>
+    <script src="script.js"> </script>
+  </body>
 </html>
 
 
